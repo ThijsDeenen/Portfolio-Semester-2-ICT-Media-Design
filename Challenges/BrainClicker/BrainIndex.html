@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BrainTrain Clicker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='brainStyling.css'>
+</head>
+<body>
+    <div id="profile" class="profile">
+        <p id="text">Draw yourself and add your name to start.</p>
+        <canvas></canvas><br>
+        <input id="nameInput" type="text"  value=""><br>
+        <button id="start" onclick="SaveImage()">Start</button>
+    </div>
+        <div id="grid" class="grid-container">
+        <div class="item1">
+            <h1 class="title">Upgrades:</h1>
+
+            <button title="Boosts the IQ you get per click with 0,5" id="think" class="upgrade" onclick="AddThinking()"
+            type="button">Upgrade Thinking Power<br><br><img src="Brain1.png" style="height: 80%; width: 80%">
+            <br><p id="thinkCosts">Costs: 50</p></button>
+
+            <button title="Gives you 1 extra IQ point every 6 seconds" id="sudoku" class="upgrade" onclick=AddSudoku() 
+            type="button">Solve Sudoku<br><br><img src="Sudoku.png" style="height: 80%; width: 80%">
+            <br><p id="sudokuCosts">Cost: 100</p></button>
+
+            <button title="Gives you 10 extra IQ point every 6 seconds" id="book" class="upgrade" onclick=AddBook() 
+            type="button">Read Book<br><img src="Book.png" style="height: 80%; width: 80%">
+            <br><p id="bookCosts">Costs: 250</p></button>
+
+            <button title="Gives you 50 extra IQ point every 6 seconds" id="fontys" class="upgrade" onclick=AddFontys() 
+            type="button">Take A Class<br><img src="Fontys.png" style="height: 80%; width: 80%">
+            <br><p id="fontysCosts">Costs: 2000</p></button>
+        </div>
+
+        <div class="item2">
+            <a id="iQButton" class="iQButton" onclick="AddIQ()"><img type="button" id="brain" class='brainImage' src='Brain1.png'></a>
+            <p id="counter">
+                0
+            </p>
+        </div>
+
+        <div class="item3">
+            <h1 class="title">Achievements:</h1>
+            <div id="baby" class="achievementHolder">
+                <img class="achImage" src="AchBaby.png">
+                <p class="achievement">Smartypants</p>
+                <p class="subText">Get 100 IQ</p>
+            </div>
+            <div id="finger" class="achievementHolder">
+                <img class="achImage" src="AchClick.png">
+                <p class="achievement">Broken Finger</p>
+                <p class="subText">Clicked 1000 times</p>
+            </div>
+            <div id="news" class="achievementHolder">
+                <img class="achImage" src="AchSudoku.png">
+                <p class="achievement">Need a new newspaper</p>
+                <p class="subText">Made a total of 50 sudoku puzzles</p>
+            </div>
+            <div id="library" class="achievementHolder">
+                <img class="achImage" src="AchBook.png">
+                <p class="achievement">Library out of stock</p>
+                <p class="subText">Read a total of 20 books</p>
+            </div>
+            <div id="einstein" class="achievementHolder">
+            <img class="achImage" src="AchEinstein.png">
+                <p class="achievement">Smarten than Einstein</p>
+                <p class="subText">Took 3 classes</p>
+            </div>
+            <div id="million" class="achievementHolder">
+                <img class="achImage" src="AchIQ.png">
+                <p class="achievement">1.000.000 IQ points</p>
+                <p class="subText">The title says is al</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='brainMain.js'></script>
+</html>

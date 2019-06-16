@@ -1,0 +1,134 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.grid-container.item1 { 
+    grid-area: a;
+    align-self: stretch;
+ }
+ .grid-container.item2 { 
+    grid-area: b;
+    align-self: stretch;
+ }
+ .grid-container.item3 { 
+    grid-area: c; 
+    align-self: stretch;
+ }
+
+.grid-container {
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100%;
+    grid-template-areas: 
+    "a b c";
+    background-color: blueviolet;
+    align-items: start;
+    min-height: 100%;
+  }
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  align-self: stretch;
+}
+
+
+.iQButton {
+    position: fixed;
+    left: 35%;
+    right: 35%;
+    width: 30%;
+    bottom: 10%;
+    height: auto;
+    transform: rotate(0deg)
+}.iQButton :active{
+    background: 0;
+    animation: expand 0.1s linear none;
+}
+@keyframes expand {
+    from{
+    -webkit-transform: scale(0.95);
+    }to{
+    -webkit-transform: scale(1);
+    }
+}
+
+.brainImage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}.brainImage :active{
+    transform: scale(0.95);
+}
+
+#counter {
+    position: fixed;
+    left: 50%;
+    top: 80%;
+    font-size: 5em;
+    transform: translate(-50%, -50%);
+}
+
+.upgrade {
+    width: 40%;
+    height: auto;
+    background-color: pink;
+}
+.title{
+    font-size: 3em;
+}
+.achievement{
+    font-size: 2em;
+    margin-bottom: -2%;
+    margin-top: 1%;
+    margin-left: 18%;
+}
+.subText {
+    margin-left: 18%;
+}
+.achImage {
+    float: left;
+    width: 16%;
+    height: auto;
+    border: 2px solid black;
+}
+.achievementHolder {
+    filter: grayscale(100%);
+    border: 2px solid black;
+    width: 99%;
+    height: 135%;
+    text-align: start;
+    margin-bottom: 2%;
+    background-color: pink;
+}
+
+.profile {
+    position: fixed;
+    left: 50%;
+    top: 16%;
+    transform: translate(-50%, -50%);
+}
+canvas{
+    position: relative;
+    border: 1px solid black;
+}
+#nameInput {
+    position: relative;
+    width: 98.8%;
+    text-align: center;
+}
+#start {
+    position: relative;
+    width: 100%;
+}

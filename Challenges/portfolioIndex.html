@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Thijs Deenen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="portfolioStyling.css">
+    <script src="portfolioCode.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#proftaak">Proftaak</a>
+        <a href="#sco">SCO</a>
+        <a href="#uex">UEX</a>
+        <a href="#dev">DEV</a>
+    </div>
+    <p class="reflection">Dit was mijn eerst versie voor mijn portfolio. Ik zat te kijken naar verschillende achtergrond afbeeldingen die ik zou kunnen gebruiken om de stijl van mijn portfolio te bepalen. Ik zag een achtergrond die een dag- en nachtversie had. Ik kwam op het idee om mijn portfolio aan te passen op basis van of het nacht-, of dag is. Dit zou dan aangepast kunnen worden door een knop op het scherm. 's nachts zou bijvoorbeeld het kleurschema verschillen met het kleurschema die overdag getoond wordt, of misschien dat alleen 's nachts de proftaak bekeken kan worden, maar overdag de vakken. Ik kwam erachter dat dit met tekst niet zo goed werktte,
+        tenzij alle tekst in vakken zou staan, maar dan is niets meer van de achtergronden te zien. De tekst zou anders over moeten lopen van het rode deel van de schemering tot het gele- en daarna zelfs witte deel. Dit werkt niet goed maar een vaste kleur tekst, maar als het zou verschillen was dit niet mooi geweest. Toch heb ik voor deze versie gebruik gemaakt van javascript code die mij geholpen heeft met mijn huidige technieken met javascript.
+    </p>
+    <button id="change-background" onclick="myFunction()">Change BackGround</button>
+    <script>
+        var dayLight = true;
+        function myFunction() {
+            if(dayLight == true){
+                document.body.style.backgroundImage = "url('portfolioImages/background night.jpg')";
+                dayLight = false;
+            }else{
+                document.body.style.backgroundImage = "url('portfolioImages/background.jpg')";
+                dayLight = true;
+            }
+        }
+    </script>
+</body>
+</html>

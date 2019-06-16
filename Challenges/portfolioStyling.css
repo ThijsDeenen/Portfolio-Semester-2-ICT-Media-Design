@@ -1,0 +1,55 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url('portfolioImages/background.jpg');
+    background-size: 100%;
+    height: 100%;
+}
+
+#change-background{
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    background-color: rgba(56, 4, 139, 0.425); 
+    border: none;
+    border-radius: 4px;
+}
+
+.topnav {
+    background-image: linear-gradient((linear-gradient(to right,black,blue,black)),  rgba(0,0,0,0)); 
+    overflow: hidden;
+    text-align: center;
+    border: 10px;
+    border-color: white;
+  }
+
+.topnav a {
+    float: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgba(56, 4, 139, 0.425);
+  }
+  
+  .topnav a.active {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .reflection {
+    border: 3px solid rgb(37, 40, 57);
+    padding: 5px;
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    background-color: rgb(72, 77, 108);
+    margin-left: 45px;
+    font-size: 17px;
+    max-width: 70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }

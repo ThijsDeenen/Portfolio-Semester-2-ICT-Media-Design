@@ -1,0 +1,14 @@
+[
+{
+"display": "Canvas",
+"url": "https://fhict.instructure.com/courses/7649/modules"
+},
+{
+"display": "YouTube",
+"url": "https://www.youtube.com/watch?v=h0ZUpPiV1ac"
+},
+{
+"display": "w3schools",
+"url": "https://www.w3schools.com/js/js_json_http.asp"
+}
+]
