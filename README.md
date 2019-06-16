@@ -1,4 +1,10 @@
 # Portfolio-Semester-2-ICT-Media-Design
-Dit bevat alle bestanden die gebruikt zijn om mijn portfolio in elkaar te zetten. 
+This repository concists of every file used to create my portfolio.
 
-In de challenge map zitten alle afbeeldingen, html, css en javascript bestanden die gebruikt zijn in de verschillende linkjes naar schallenges, assignments en projecten op de DEV pagina. Elke challenge heeft namelijk een eigen html pagina met, als dit van toepassing is, een css en/of javascript bestand. 
+**version 1.0.2**
+This repository exists to show the scripts from my portfolio for the second semester of ICT & Media Design of Fontys Eindhoven.
+
+In the challenge map are all the images, html, css and javascript files that I used in the different links to challenges, assignments and projects on te DEV page in my portfolio. Every challenge has it's own html page and coud have a css and/or javascript file.
+
+##Licence
+Thijs Deenen
